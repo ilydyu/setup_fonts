@@ -4,4 +4,4 @@ This script downloads and installs the following fonts: Manrope, Merriweather, M
 
 ## Usage
 
-`bash <(wget -qO- https://raw.githubusercontent.com/ilydyu/setup-fonts/main/install.sh)`
+<pre>```curl -fsSL https://raw.githubusercontent.com/ilydyu/setup_fonts/refs/heads/main/install.sh | bash```</pre>

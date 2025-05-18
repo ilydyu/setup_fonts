@@ -1,5 +1,15 @@
 #!/bin/bash
 
+set -e
+
+
+for cmd in wget unzip fc-cache; do
+    if ! command -v $cmd &> /dev/null; then
+        echo "Error: The utility '$cmd' is not installed. Please install it and try again."
+        exit 1
+    fi
+done
+
 MONOSPACE_FONT_NAME="Monospace Neon"
 MONOSPACE_FONT_URL="https://github.com/githubnext/monaspace/releases/download/v1.101/monaspace-v1.101.zip"
 
